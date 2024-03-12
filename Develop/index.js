@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
+const { Console } = require("console");
 
 // TODO: Create an array of questions for user input
 const questions = [{
@@ -30,10 +31,58 @@ const questions = [{
   },];
 
 // TODO: Create a function to write README file
-function writeToFile(, data) {}
+function createReadme({name, description, siteURL, siteImage, wireframe}) {
+    return `# ${name}
+
+    ${description} 
+    
+    
+    
+    ## Table of Contents
+    
+    - [Features](#features)
+    - [Link-to-Webpage](#Link-to-Webpage)
+    - [Appearance](#Appearance)
+    - [About-Developer](#About-developer)
+    - [Wireframe](#Wireframe)
+    
+    
+    ## About-developer
+    
+    Hi my name is Molaligne (Mola) Dafa. I am currently taking part in a coding boot camp and this is my Second project. 
+    In it, I have attempted to demonstrate my skills in CSS and HTML.
+    
+    ## Features
+    
+    - Function nav bar.
+    - semantic HTML design.
+    - Accessible design features
+    - 
+      
+    ## Link-to-Webpage
+    - ${siteURL}
+    
+    ## Appearance
+    
+    The following image demonstrates the webpage's appearance
+    ![Screenshot of webpage](${siteImage})
+    
+    ## Wireframe
+    The following image displays a wireframe of my design
+    ![Wireframe of website](${wireframe})`;   
+}
+
+
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions)
+.then((answers) => {
+            const readMeContent = createReadme(answers);
+            fs.writeFile(`README.md`, readMeContent, (err)=>{
+            err ? console.log(err) : Console.log("Successfull written to file")});    
+});
+}
 
 // Function call to initialize app
 init();

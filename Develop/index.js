@@ -1,9 +1,9 @@
-// TODO: Include packages needed for this application
+// packages needed for this application
 const inquirer = require("inquirer");
 const fs = require("fs");
 const { Console } = require("console");
 
-// TODO: Create an array of questions for user input
+//  array of questions for user input
 const questions = [{
     type: 'input',
     name: 'name',
@@ -30,7 +30,7 @@ const questions = [{
     message: 'Please provide a file path for an image depicting the wireframe',
   },];
 
-// TODO: Create a function to write README file
+//  function to write README file
 function createReadme({name, description, siteURL, siteImage, wireframe}) {
     return `# ${name}
 
@@ -74,7 +74,7 @@ The following image displays a wireframe of my design
 
 
 
-// TODO: Create a function to initialize app
+//  function to initialize app
 function init() {
     inquirer.prompt(questions)
 .then((answers) => {

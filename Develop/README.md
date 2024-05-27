@@ -1,8 +1,7 @@
-# test
-
-undefined 
+# Read Me Generator
 
 
+This is a command-line application that dynamically generates a professional README.md file based on the user's input.
 
 ## Table of Contents
 
@@ -10,29 +9,27 @@ undefined
 - [Link-to-Webpage](#Link-to-Webpage)
 - [Appearance](#Appearance)
 - [About-Developer](#About-developer)
-- [Wireframe](#Wireframe)
+- 
 
 
 ## About-developer
 
-Hi my name is Molaligne (Mola) Dafa. I am currently taking part in a coding boot camp and this is my Second project. 
-In it, I have attempted to demonstrate my skills in CSS and HTML.
+Hello! I'm Molaligne (Mola) Dafa, a dedicated web developer with a passion for reading, understanding how things work, and creating solutions that make the world a better place. My journey into web development stems from a deep curiosity and a strong desire to develop impactful and innovative solutions.
+
+I hold a Full Stack Web Development Certificate from the University of Adelaide. My expertise spans modern web technologies, including Express.js, Node.js, React.js, Tailwind CSS, MySQL/NoSQL, and MongoDB.
 
 ## Features
 
-- Function nav bar.
-- semantic HTML design.
-- Accessible design features
-- 
+- Dynamic Title creation
+- Dynamic Image selection
 
+  
+ 
+  
 ## Link-to-Webpage
-- kd
+- https://github.com/Mola90/dynamic-Readme-Generator
 
 ## Appearance
 
-The following image demonstrates the webpage's appearance
-![Screenshot of webpage](ld)
-
-## Wireframe
-The following image displays a wireframe of my design
-![Wireframe of website](assets\images\PlaceHolderImageOne.webp)
+The following image demonstrates a image of the program running
+![Screenshot of webpage](../assets/images/Image.png)
